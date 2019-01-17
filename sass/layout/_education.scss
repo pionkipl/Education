@@ -1,0 +1,66 @@
+.education {
+  @include breakpoints(phone-big) {
+    margin-top: -3.5rem;
+  }
+  .person-mac {
+    width: 100%;
+    height: 80%;
+  }
+
+  .education-image {
+    display: flex;
+    align-items: center;
+  }
+
+  .education-block {
+    margin-left: 6rem;
+    height: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+
+    .heading-education {
+      font-size: 3.6rem;
+      font-weight: 700;
+      margin-bottom: 3rem;
+    }
+
+    .education-text {
+      font-size: $font-paragraph;
+    }
+
+    &__info {
+      &-item {
+        margin-top: 3rem;
+        font-size: 3rem;
+        font-weight: 700;
+        display: flex;
+        align-items: center;
+
+        .learn,
+        .talk,
+        .speak {
+          width: 3.5rem;
+          height: 3.5rem;
+        }
+
+        .learn {
+          background-image: url("../img/learn-anything.svg");
+        }
+
+        .talk {
+          background-image: url("../img/talk-instructors.svg");
+        }
+
+        .speak {
+          background-image: url("../img/speak-others.svg");
+        }
+
+        .learn-text {
+          margin-left: 2rem;
+        }
+      }
+    }
+  }
+}
