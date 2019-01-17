@@ -62,7 +62,7 @@
 
 .hamburger-menu {
   display: none;
-  z-index: 3;
+  z-index: 11;
 
   @include breakpoints(tab-port) {
     display: flex;

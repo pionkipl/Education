@@ -1,0 +1,74 @@
+.features {
+  background-color: $color-grey-light;
+  &-block {
+    display: flex;
+    justify-content: center;
+
+    .heading-secondary {
+      font-size: 4.8rem;
+      font-weight: 700;
+    }
+  }
+
+  .features__item:not(:first-child) {
+    margin-top: 3.5rem;
+  }
+
+  .features__item {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    &-circle {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 15rem;
+      height: 15rem;
+      background-color: $color-white;
+      border-radius: 50%;
+    }
+
+    .online-test {
+      background-image: url("../img/online_test.svg");
+      @include feature-icon;
+      width: 8rem;
+      height: 10rem;
+    }
+
+    .expert-professor {
+      background-image: url("../img/expert_professor.svg");
+      @include feature-icon;
+      width: 7rem;
+      height: 10rem;
+    }
+
+    .trusted-certification {
+      background-image: url("../img/trusted_certification.svg");
+      @include feature-icon;
+      width: 7rem;
+      height: 10rem;
+    }
+
+    .scientific-research {
+      background-image: url("../img/scientific_research.svg");
+      @include feature-icon;
+      width: 10rem;
+      height: 10rem;
+    }
+
+    .audio-video {
+      background-image: url("../img/audio_video.svg");
+      @include feature-icon;
+      width: 10rem;
+      height: 7rem;
+    }
+
+    .professional-course {
+      background-image: url("../img/professional_course.svg");
+      @include feature-icon;
+      width: 7rem;
+      height: 10rem;
+    }
+  }
+}
