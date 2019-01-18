@@ -49,11 +49,21 @@ body {
   margin-bottom: 2rem;
   margin-top: 2rem; }
 
-.features-text {
+.heading-secondary {
+  font-size: 4.8rem;
+  font-weight: 700; }
+
+.features__item .features-text {
   color: #484848;
   font-size: 1.8rem;
   text-align: center;
   font-family: "Montserrat", sans-serif; }
+  @media only screen and (max-width: 47.95em) {
+    .features__item .features-text {
+      width: 80%; } }
+  @media only screen and (max-width: 37.5em) {
+    .features__item .features-text {
+      width: 100%; } }
 
 .u-padding-top {
   padding-top: 5rem; }
@@ -94,6 +104,9 @@ body {
     .button:hover:after {
       left: 120%;
       transition: all 0.6s cubic-bezier(0.19, 1, 0.22, 1); }
+  .button--fit {
+    padding: 0.5rem 3rem;
+    text-align: center; }
 
 .nav {
   width: 100%; }
@@ -122,11 +135,14 @@ body {
   .nav .open-menu {
     display: flex;
     opacity: 1;
-    position: absolute;
-    z-index: 2;
+    position: fixed;
+    z-index: 3;
     flex-direction: column;
     align-items: center;
-    left: 0; }
+    justify-content: center;
+    left: 0;
+    top: 0;
+    height: 100vh; }
     .nav .open-menu .list__item {
       font-size: 5.5rem;
       margin-right: 0;
@@ -142,7 +158,9 @@ body {
   @media only screen and (max-width: 62.5em) {
     .hamburger-menu {
       display: flex;
-      order: 1; } }
+      order: 1;
+      position: fixed;
+      right: 2rem; } }
 
 .wrapper-menu {
   width: 5rem;
@@ -156,7 +174,8 @@ body {
     background-color: #fff;
     border-radius: 0.5rem;
     width: 100%;
-    height: 0.6rem; }
+    height: 0.6rem;
+    box-shadow: 0 0 1px 1px #1a1a1a; }
     .wrapper-menu .line-menu.half {
       width: 50%; }
     .wrapper-menu .line-menu.start {
@@ -178,12 +197,40 @@ body {
   height: 100%;
   background-color: #1a1a1a;
   opacity: 0.95;
-  position: absolute;
-  transition: all 1s ease-out; }
+  position: fixed;
+  transition: all 1s ease-out;
+  z-index: 3; }
 
 .hide {
   right: 0;
   width: 0; }
+
+.courses__item {
+  background-color: #f1f1f1; }
+  .courses__item-top {
+    padding-bottom: 3rem;
+    border-bottom: 2px solid rgba(72, 72, 72, 0.3); }
+    .courses__item-top-img {
+      background-image: url("../img/web-design.png");
+      width: 100%;
+      height: 20rem;
+      background-size: cover; }
+    .courses__item-top-text {
+      padding-left: 1.5rem;
+      font-size: 1.5rem;
+      color: #484848; }
+  .courses__item-bottom {
+    margin-top: 2rem; }
+    .courses__item-bottom-time, .courses__item-bottom-teacher {
+      font-size: 2.4rem; }
+    .courses__item-bottom-time {
+      margin-bottom: 1rem; }
+      .courses__item-bottom-time .courses-text {
+        border-bottom: 2px solid rgba(72, 72, 72, 0.3); }
+    .courses__item-bottom-teacher .courses-text {
+      border-bottom: 2px solid rgba(72, 72, 72, 0.3); }
+    .courses__item-bottom .button-container {
+      padding: 2rem 1.5rem; }
 
 @media only screen and (max-width: 47.95em) {
   .education {
@@ -249,18 +296,11 @@ body {
 
 .features {
   background-color: #f1f1f1; }
-  .features-block {
-    display: flex;
-    justify-content: center; }
-    .features-block .heading-secondary {
-      font-size: 4.8rem;
-      font-weight: 700; }
-  .features .features__item:not(:first-child) {
-    margin-top: 3.5rem; }
   .features .features__item {
     display: flex;
     align-items: center;
-    flex-direction: column; }
+    flex-direction: column;
+    margin-top: 4rem; }
     .features .features__item-circle {
       display: flex;
       justify-content: center;

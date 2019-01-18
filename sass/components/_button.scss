@@ -29,4 +29,9 @@
       transition: all 0.6s cubic-bezier(0.19, 1, 0.22, 1);
     }
   }
+
+  &--fit {
+    padding: 0.5rem 3rem;
+    text-align: center;
+  }
 }

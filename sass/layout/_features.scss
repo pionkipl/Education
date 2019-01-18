@@ -1,23 +1,11 @@
 .features {
   background-color: $color-grey-light;
-  &-block {
-    display: flex;
-    justify-content: center;
-
-    .heading-secondary {
-      font-size: 4.8rem;
-      font-weight: 700;
-    }
-  }
-
-  .features__item:not(:first-child) {
-    margin-top: 3.5rem;
-  }
 
   .features__item {
     display: flex;
     align-items: center;
     flex-direction: column;
+    margin-top: 4rem;
 
     &-circle {
       display: flex;

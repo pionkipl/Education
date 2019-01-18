@@ -39,11 +39,14 @@
   .open-menu {
     display: flex;
     opacity: 1;
-    position: absolute;
-    z-index: 2;
+    position: fixed;
+    z-index: 3;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     left: 0;
+    top: 0;
+    height: 100vh;
 
     .list__item {
       font-size: 5.5rem;
@@ -67,6 +70,8 @@
   @include breakpoints(tab-port) {
     display: flex;
     order: 1;
+    position: fixed;
+    right: 2rem;
   }
 }
 
@@ -84,6 +89,7 @@
     border-radius: 0.5rem;
     width: 100%;
     height: 0.6rem;
+    box-shadow: 0 0 1px 1px $color-black;
 
     &.half {
       width: 50%;
@@ -121,8 +127,9 @@
   height: 100%;
   background-color: $color-black;
   opacity: 0.95;
-  position: absolute;
+  position: fixed;
   transition: all 1s ease-out;
+  z-index: 3;
 }
 
 .hide {
