@@ -50,3 +50,21 @@
   background-size: contain;
   background-repeat: no-repeat;
 }
+
+@mixin course-images {
+  width: 100%;
+  height: 20rem;
+  background-size: cover;
+
+  @include breakpoints(phone-big) {
+    height: 30rem;
+  }
+}
+
+@mixin teacher-images {
+  width: 12rem;
+  height: 12rem;
+  border-radius: 50%;
+  background-size: cover;
+  background-position: center;
+}

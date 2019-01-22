@@ -1,14 +1,27 @@
 .courses {
   &__item {
     background-color: $color-grey-light;
+    @include breakpoints(phone-big) {
+      width: fit-content;
+      margin: 0 auto;
+      margin-bottom: 5rem;
+    }
     &-top {
       padding-bottom: 3rem;
       border-bottom: 2px solid rgba($color-text, 0.3);
-      &-img {
+      &-img--design {
+        @include course-images;
         background-image: url("../img/web-design.png");
-        width: 100%;
-        height: 20rem;
-        background-size: cover;
+      }
+
+      &-img--photo {
+        @include course-images;
+        background-image: url("../img/photography.png");
+      }
+
+      &-img--marketing {
+        @include course-images;
+        background-image: url("../img/digital-marketing.png");
       }
 
       &-text {
