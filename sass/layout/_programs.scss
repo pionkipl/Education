@@ -1,0 +1,79 @@
+.programs {
+  margin-bottom: 5rem;
+  &__item {
+    margin-top: 3rem;
+    &-img {
+      &-text {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        &--main {
+          color: $color-white;
+          font-size: 2.5rem;
+          font-weight: 700;
+          text-align: center;
+        }
+        &--paragraph {
+          color: $color-white;
+          font-size: 1.8rem;
+          text-align: center;
+          padding: 2rem 5rem;
+        }
+      }
+      &--education {
+        background-image: linear-gradient(
+            rgba($color-primary, 0.8),
+            rgba($color-primary, 0.8)
+          ),
+          url("../img/high-school.jpeg");
+        @include program-images;
+      }
+
+      &--middle {
+        background-image: linear-gradient(
+            rgba($color-primary, 0.8),
+            rgba($color-primary, 0.8)
+          ),
+          url("../img/middle-school.jpeg");
+        @include program-images;
+      }
+
+      &--high {
+        background-image: linear-gradient(
+            rgba($color-primary, 0.8),
+            rgba($color-primary, 0.8)
+          ),
+          url("../img/college.jpeg");
+        @include program-images;
+      }
+
+      &--exchange {
+        background-image: linear-gradient(
+            rgba($color-primary, 0.8),
+            rgba($color-primary, 0.8)
+          ),
+          url("../img/international-exchange.jpeg");
+        @include program-images;
+      }
+
+      &--graduate {
+        background-image: linear-gradient(
+            rgba($color-primary, 0.8),
+            rgba($color-primary, 0.8)
+          ),
+          url("../img/graduate-programs.jpeg");
+        @include program-images;
+      }
+
+      &--home {
+        background-image: linear-gradient(
+            rgba($color-primary, 0.8),
+            rgba($color-primary, 0.8)
+          ),
+          url("../img/home-education.jpeg");
+        @include program-images;
+      }
+    }
+  }
+}

@@ -1,0 +1,64 @@
+.subscribe {
+  background-image: url("../img/boots.png");
+  width: 100%;
+  min-height: 15rem;
+  display: flex;
+  align-items: center;
+
+  &__items {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    @include breakpoints(phone) {
+      flex-direction: column;
+    }
+    &-text {
+      font-size: 3.6rem;
+      color: $color-white;
+
+      @include breakpoints(phone-big) {
+        font-size: 2.6rem;
+      }
+
+      @include breakpoints(phone) {
+        padding-top: 2rem;
+      }
+    }
+
+    &-input {
+      border: none;
+      border-bottom: 2px solid $color-grey-dark;
+      background-color: transparent;
+      width: 30%;
+      color: $color-white;
+      font-size: 2.5rem;
+
+      @include breakpoints(phone) {
+        width: 70%;
+        margin: 3rem 0;
+      }
+
+      &:focus {
+        outline: none;
+      }
+    }
+
+    .subscribe-button {
+      margin-top: 0;
+      min-width: 140px;
+
+      @include breakpoints(phone-big) {
+        margin-left: 3rem;
+      }
+
+      @include breakpoints(phone) {
+        margin: 3rem 0;
+      }
+
+      &:focus {
+        outline: none;
+      }
+    }
+  }
+}

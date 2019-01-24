@@ -68,3 +68,12 @@
   background-size: cover;
   background-position: center;
 }
+
+@mixin program-images {
+  width: 100%;
+  height: 30rem;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

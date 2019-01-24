@@ -2,7 +2,7 @@ let helper = document.querySelector(".helper");
 let teacher = document.querySelectorAll(".teacher__item");
 let teacherMobile = document.querySelector(".teacher-mobile");
 
-window.addEventListener("resize", resize());
+window.addEventListener("resize", resize);
 
 function resize() {
   let w = window.innerWidth;
@@ -31,6 +31,7 @@ function resize() {
   } else {
     hidden.style.display = "flex";
     teacherMobile.style.display = "none";
+    el.style.removeProperty("justifyContent");
   }
 }
 
