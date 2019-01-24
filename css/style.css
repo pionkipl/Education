@@ -424,9 +424,66 @@ body {
           text-align: center; } }
 
 .teacher__item {
-  display: flex; }
+  display: flex;
+  margin-bottom: 3rem; }
   .teacher__item-img--teacher-1 {
     background-image: url("../img/teacher-1.jpeg");
+    width: 12rem;
+    height: 12rem;
+    border-radius: 50%;
+    background-size: cover;
+    background-position: center; }
+  .teacher__item-img--teacher-2 {
+    background-image: url("../img/teacher-2.jpeg");
+    width: 12rem;
+    height: 12rem;
+    border-radius: 50%;
+    background-size: cover;
+    background-position: center; }
+  .teacher__item-img--teacher-3 {
+    background-image: url("../img/teacher-3.jpeg");
+    width: 12rem;
+    height: 12rem;
+    border-radius: 50%;
+    background-size: cover;
+    background-position: center; }
+  .teacher__item-img--teacher-4 {
+    background-image: url("../img/teacher-4.jpeg");
+    width: 12rem;
+    height: 12rem;
+    border-radius: 50%;
+    background-size: cover;
+    background-position: center; }
+  .teacher__item-img--teacher-5 {
+    background-image: url("../img/teacher-5.jpeg");
+    width: 12rem;
+    height: 12rem;
+    border-radius: 50%;
+    background-size: cover;
+    background-position: center; }
+  .teacher__item-img--teacher-6 {
+    background-image: url("../img/teacher-6.jpeg");
+    width: 12rem;
+    height: 12rem;
+    border-radius: 50%;
+    background-size: cover;
+    background-position: center; }
+  .teacher__item-img--teacher-7 {
+    background-image: url("../img/teacher-7.jpeg");
+    width: 12rem;
+    height: 12rem;
+    border-radius: 50%;
+    background-size: cover;
+    background-position: center; }
+  .teacher__item-img--teacher-8 {
+    background-image: url("../img/teacher-8.jpeg");
+    width: 12rem;
+    height: 12rem;
+    border-radius: 50%;
+    background-size: cover;
+    background-position: center; }
+  .teacher__item-img--teacher-9 {
+    background-image: url("../img/teacher-9.jpeg");
     width: 12rem;
     height: 12rem;
     border-radius: 50%;
@@ -440,7 +497,13 @@ body {
     .teacher__item-text--name {
       font-size: 3rem;
       font-weight: 700; }
+      @media only screen and (max-width: 75em) {
+        .teacher__item-text--name {
+          font-size: 2.5rem; } }
     .teacher__item-text--profession {
       font-size: 2.4rem;
       font-weight: 700;
       color: #27ae61; }
+      @media only screen and (max-width: 75em) {
+        .teacher__item-text--profession {
+          font-size: 2rem; } }

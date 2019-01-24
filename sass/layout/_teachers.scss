@@ -1,9 +1,50 @@
 .teacher {
   &__item {
     display: flex;
+    margin-bottom: 3rem;
     &-img {
       &--teacher-1 {
         background-image: url("../img/teacher-1.jpeg");
+        @include teacher-images;
+      }
+
+      &--teacher-2 {
+        background-image: url("../img/teacher-2.jpeg");
+        @include teacher-images;
+      }
+
+      &--teacher-3 {
+        background-image: url("../img/teacher-3.jpeg");
+        @include teacher-images;
+      }
+
+      &--teacher-4 {
+        background-image: url("../img/teacher-4.jpeg");
+        @include teacher-images;
+      }
+
+      &--teacher-5 {
+        background-image: url("../img/teacher-5.jpeg");
+        @include teacher-images;
+      }
+
+      &--teacher-6 {
+        background-image: url("../img/teacher-6.jpeg");
+        @include teacher-images;
+      }
+
+      &--teacher-7 {
+        background-image: url("../img/teacher-7.jpeg");
+        @include teacher-images;
+      }
+
+      &--teacher-8 {
+        background-image: url("../img/teacher-8.jpeg");
+        @include teacher-images;
+      }
+
+      &--teacher-9 {
+        background-image: url("../img/teacher-9.jpeg");
         @include teacher-images;
       }
     }
@@ -16,12 +57,20 @@
       &--name {
         font-size: 3rem;
         font-weight: 700;
+
+        @include breakpoints(tab-land) {
+          font-size: 2.5rem;
+        }
       }
 
       &--profession {
         font-size: 2.4rem;
         font-weight: 700;
         color: $color-primary;
+
+        @include breakpoints(tab-land) {
+          font-size: 2rem;
+        }
       }
     }
   }
