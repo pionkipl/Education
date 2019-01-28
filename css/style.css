@@ -519,15 +519,27 @@ body {
       border: none;
       border-bottom: 2px solid #95989a;
       background-color: transparent;
-      width: 30%;
+      width: 35rem;
       color: #fff;
-      font-size: 2.5rem; }
+      font-size: 2.5rem;
+      margin-right: 5rem; }
       @media only screen and (max-width: 37.5em) {
         .subscribe__items-input {
           width: 70%;
           margin: 3rem 0; } }
       .subscribe__items-input:focus {
         outline: none; }
+    .subscribe__items-input:focus .subscribe__items-label {
+      font-size: 1rem;
+      top: 0; }
+    .subscribe__items-label {
+      position: absolute;
+      top: 2rem;
+      color: #fff;
+      font-size: 1.7rem;
+      transition: all 1s; }
+    .subscribe__items form {
+      position: relative; }
     .subscribe__items .subscribe-button {
       margin-top: 0;
       min-width: 140px; }

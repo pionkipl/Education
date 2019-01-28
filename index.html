@@ -571,8 +571,20 @@
       <div class="container">
         <div class="subscribe__items">
           <h3 class="subscribe__items-text">Subscribe to our newsletter</h3>
-          <input type="text" class="subscribe__items-input" />
-          <button class="button subscribe-button">Sign up</button>
+          <form action="#">
+            <label class="subscribe__items-label" for="mail">E-mail:</label>
+            <input
+              type="mail"
+              id="mail"
+              name="user_mail"
+              class="subscribe__items-input"
+            />
+            <input
+              type="submit"
+              class="button subscribe-button"
+              value="Sign up"
+            />
+          </form>
         </div>
       </div>
     </section>
