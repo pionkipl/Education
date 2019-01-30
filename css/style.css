@@ -216,6 +216,40 @@ body {
   right: 0;
   width: 0; }
 
+.contact__form {
+  display: flex;
+  flex-direction: column; }
+  .contact__form__input--name {
+    border: none;
+    border-bottom: 2px solid #95989a;
+    background-color: transparent;
+    color: #1a1a1a;
+    font-size: 1.8rem;
+    margin-bottom: 2rem; }
+  .contact__form__input--name:focus {
+    outline: none; }
+  .contact__form__input--mail {
+    border: none;
+    border-bottom: 2px solid #95989a;
+    background-color: transparent;
+    color: #1a1a1a;
+    font-size: 1.8rem;
+    margin-bottom: 2rem; }
+  .contact__form__input--mail:focus {
+    outline: none; }
+  .contact__form__textarea {
+    padding: 0.7rem; }
+  .contact__form__textarea:focus {
+    outline: none; }
+  .contact__form .contact-button {
+    width: fit-content;
+    padding: 1.5rem 5rem; }
+  .contact__form .contact-button:focus {
+    outline: none; }
+
+.contact #map {
+  height: 30rem; }
+
 .courses__item {
   background-color: #f1f1f1; }
   @media only screen and (max-width: 47.95em) {
@@ -382,6 +416,24 @@ body {
       width: 7rem;
       height: 10rem; }
 
+.footer {
+  background-color: #1a1a1a;
+  padding: 3rem; }
+  .footer__items {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    .footer__items-logo {
+      width: 6rem; }
+    .footer__items-text {
+      color: #fff;
+      font-size: 3.5rem;
+      margin-top: 2rem;
+      text-transform: uppercase;
+      background: linear-gradient(to right, #38ef2b, #27ae61);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent; }
+
 @media only screen and (max-width: 62.5em) {
   .container {
     margin: auto;
@@ -503,7 +555,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center; }
-    @media only screen and (max-width: 37.5em) {
+    @media only screen and (max-width: 47.95em) {
       .subscribe__items {
         flex-direction: column; } }
     .subscribe__items-text {
@@ -511,7 +563,8 @@ body {
       color: #fff; }
       @media only screen and (max-width: 47.95em) {
         .subscribe__items-text {
-          font-size: 2.6rem; } }
+          font-size: 2.6rem;
+          margin: 2rem auto; } }
       @media only screen and (max-width: 37.5em) {
         .subscribe__items-text {
           padding-top: 2rem; } }
@@ -523,29 +576,34 @@ body {
       color: #fff;
       font-size: 2.5rem;
       margin-right: 5rem; }
+      @media only screen and (max-width: 75em) {
+        .subscribe__items-input {
+          width: 22rem; } }
       @media only screen and (max-width: 37.5em) {
         .subscribe__items-input {
-          width: 70%;
-          margin: 3rem 0; } }
+          width: 17rem;
+          margin-right: 2rem; } }
       .subscribe__items-input:focus {
         outline: none; }
-    .subscribe__items-input:focus .subscribe__items-label {
-      font-size: 1rem;
-      top: 0; }
     .subscribe__items-label {
       position: absolute;
       top: 2rem;
+      left: 0;
       color: #fff;
       font-size: 1.7rem;
-      transition: all 1s; }
-    .subscribe__items form {
+      transition: all 0.5s; }
+      @media only screen and (max-width: 47.95em) {
+        .subscribe__items-label {
+          top: 5rem; } }
+    .subscribe__items .subscribe__form {
       position: relative; }
     .subscribe__items .subscribe-button {
       margin-top: 0;
       min-width: 140px; }
       @media only screen and (max-width: 47.95em) {
         .subscribe__items .subscribe-button {
-          margin-left: 3rem; } }
+          margin-left: 3rem;
+          margin-top: 3rem; } }
       @media only screen and (max-width: 37.5em) {
         .subscribe__items .subscribe-button {
           margin: 3rem 0; } }

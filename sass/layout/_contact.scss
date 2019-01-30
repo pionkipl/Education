@@ -1,0 +1,44 @@
+.contact {
+  &__form {
+    display: flex;
+    flex-direction: column;
+    &__input {
+      &--name {
+        @include input-style;
+      }
+
+      &--name:focus {
+        outline: none;
+      }
+
+      &--mail {
+        @include input-style;
+      }
+
+      &--mail:focus {
+        outline: none;
+      }
+    }
+
+    &__textarea {
+      padding: 0.7rem;
+    }
+
+    &__textarea:focus {
+      outline: none;
+    }
+
+    .contact-button {
+      width: fit-content;
+      padding: 1.5rem 5rem;
+    }
+
+    .contact-button:focus {
+      outline: none;
+    }
+  }
+
+  #map {
+    height: 30rem;
+  }
+}

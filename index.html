@@ -16,6 +16,10 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.6/css/swiper.css"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.4.0/leaflet.css"
+    />
     <link rel="stylesheet" href="css/bootstrap-grid.css" />
     <link rel="stylesheet" href="css/style.css" />
     <title>Education</title>
@@ -571,14 +575,14 @@
       <div class="container">
         <div class="subscribe__items">
           <h3 class="subscribe__items-text">Subscribe to our newsletter</h3>
-          <form action="#">
-            <label class="subscribe__items-label" for="mail">E-mail:</label>
+          <form class="subscribe__form" action="#">
             <input
               type="mail"
               id="mail"
               name="user_mail"
               class="subscribe__items-input"
             />
+            <label class="subscribe__items-label" for="mail">E-mail:</label>
             <input
               type="submit"
               class="button subscribe-button"
@@ -589,8 +593,54 @@
       </div>
     </section>
 
+    <section class="contact u-margin-bottom">
+      <div class="container">
+        <div class="u-center">
+          <h2 class="heading-secondary u-margin-top u-margin-bottom">
+            Contact
+          </h2>
+        </div>
+        <div class="row">
+          <div class="col-md-6">
+            <form action="#" class="contact__form">
+              <input
+                type="text"
+                class="contact__form__input--name"
+                placeholder="Full Name"
+              />
+              <input
+                type="mail"
+                class="contact__form__input--mail"
+                placeholder="E-mail"
+              />
+              <textarea
+                name=""
+                id=""
+                cols="30"
+                rows="10"
+                class="contact__form__textarea"
+                placeholder="Message"
+              ></textarea>
+              <input type="submit" class="button contact-button" value="Send" />
+            </form>
+          </div>
+          <div class="col-md-6"><div id="map"></div></div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__items">
+          <img src="img/logo.png" alt="Logo" class="footer__items-logo" />
+          <p class="footer__items-text">Knowledge is power</p>
+        </div>
+      </div>
+    </footer>
+
     <div class="helper"></div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.6/js/swiper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.4.0/leaflet.js"></script>
     <script src="js/swiper.js"></script>
     <script src="js/main.js"></script>
     <script src="js/helper.js"></script>

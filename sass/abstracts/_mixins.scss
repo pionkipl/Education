@@ -77,3 +77,12 @@
   align-items: center;
   justify-content: center;
 }
+
+@mixin input-style {
+  border: none;
+  border-bottom: 2px solid $color-grey-dark;
+  background-color: transparent;
+  color: $color-black;
+  font-size: 1.8rem;
+  margin-bottom: 2rem;
+}
