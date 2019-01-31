@@ -5,6 +5,10 @@
   display: flex;
   align-items: center;
 
+  @include breakpoints(phone-big) {
+    padding-bottom: 4rem;
+  }
+
   &__items {
     display: flex;
     justify-content: space-between;

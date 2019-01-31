@@ -38,7 +38,8 @@
   box-sizing: inherit; }
 
 html {
-  font-size: 62.5%; }
+  font-size: 62.5%;
+  scroll-behavior: smooth; }
   @media only screen and (max-width: 62.5em) {
     html {
       font-size: 50%; } }
@@ -244,6 +245,9 @@ body {
   .contact__form .contact-button {
     width: fit-content;
     padding: 1.5rem 5rem; }
+    @media only screen and (max-width: 47.95em) {
+      .contact__form .contact-button {
+        margin-bottom: 3rem; } }
   .contact__form .contact-button:focus {
     outline: none; }
 
@@ -551,6 +555,9 @@ body {
   min-height: 15rem;
   display: flex;
   align-items: center; }
+  @media only screen and (max-width: 47.95em) {
+    .subscribe {
+      padding-bottom: 4rem; } }
   .subscribe__items {
     display: flex;
     justify-content: space-between;
@@ -677,7 +684,7 @@ body {
     background-size: cover;
     background-position: center; }
   .teacher__item-text {
-    margin-left: 3rem;
+    margin-left: 1rem;
     display: flex;
     flex-direction: column;
     justify-content: center; }
@@ -686,7 +693,7 @@ body {
       font-weight: 700; }
       @media only screen and (max-width: 75em) {
         .teacher__item-text--name {
-          font-size: 2.5rem; } }
+          font-size: 2rem; } }
     .teacher__item-text--profession {
       font-size: 2.4rem;
       font-weight: 700;

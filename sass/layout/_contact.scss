@@ -31,6 +31,10 @@
     .contact-button {
       width: fit-content;
       padding: 1.5rem 5rem;
+
+      @include breakpoints(phone-big) {
+        margin-bottom: 3rem;
+      }
     }
 
     .contact-button:focus {

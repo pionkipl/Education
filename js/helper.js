@@ -31,7 +31,9 @@ function resize() {
   } else {
     hidden.style.display = "flex";
     teacherMobile.style.display = "none";
-    el.style.removeProperty("justifyContent");
+    teacher.forEach(function(el) {
+      el.style.justifyContent = "";
+    });
   }
 }
 
