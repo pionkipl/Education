@@ -9,10 +9,11 @@ const linkEducation = document.querySelector(".link-education");
 const linkFeatures = document.querySelector(".link-features");
 const linkCourses = document.querySelector(".link-courses");
 const linkTeachers = document.querySelector(".link-teachers");
+const LinktTeachersMobile = document.querySelector(".teacher-mobile");
 const linkPrograms = document.querySelector(".link-programs");
 const linkContact = document.querySelector(".link-contact");
 
-window.addEventListener("resize", checkWidth);
+// window.addEventListener("resize", checkWidth);
 
 function checkWidth() {
   let w = window.innerWidth;
@@ -22,11 +23,14 @@ function checkWidth() {
     linkFeatures.addEventListener("click", anim);
     linkCourses.addEventListener("click", anim);
     linkTeachers.addEventListener("click", anim);
+    LinktTeachersMobile.addEventListener("click", anim);
     linkPrograms.addEventListener("click", anim);
     linkContact.addEventListener("click", anim);
     console.log("siema");
   }
 }
+
+checkWidth();
 
 wrapperMenu.addEventListener("click", anim);
 
