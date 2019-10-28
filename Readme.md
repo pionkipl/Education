@@ -1,6 +1,6 @@
-#Education page
+# Education page
 
-##Technologies used:
+## Technologies used:
 - HTML
 - SCSS
 - JS
