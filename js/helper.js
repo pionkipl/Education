@@ -2,12 +2,12 @@
 const teacher = document.querySelectorAll(".teacher__item");
 const teacherMobile = document.querySelector(".teacher-mobile");
 const myLinkTeachers = document.querySelector('.link-teachers');
+const hidden = document.querySelector(".hidden");
 
 window.addEventListener("resize", resize);
 
 function resize() {
   let w = window.innerWidth;
-  let hidden = document.querySelector(".hidden");
 
   if (w <= 767) {
     hidden.style.display = "none";
@@ -25,13 +25,15 @@ function resize() {
   }
 }
 
+resize();
+
 if (hidden.style.display === "none") {
   myLinkTeachers.setAttribute('href', '#teachers-mobile');
 } else {
   myLinkTeachers.setAttribute('href', '#teachers');
 }
 
-resize();
+
 
 
 
