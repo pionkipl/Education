@@ -6,4 +6,4 @@
 - JS
 
 
-![Education Img](knowledge-img.png)
+![Education Img](https://jaroslawszczepaniak.pl/education/knowledge-img.png)
